@@ -5,9 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Sistema de Reservas - Sin DOM</title>
+    <title>Sistema de Reservas</title>
 </head>
 <body>
+    <h1>Sistema de Reservas</h1>
+    <div class="sistemaContenedor">
+        <div class="contenedor">
+            <p>Selecciona la fecha de entrada:</p>
+                <input type="date" id="fechaEntrada">
+                <p>Selecciona la fecha de salida:</p>
+                <input type="date" id="fechaSalida">
+                <p>Selecciona la cantidad de personas:</p>
+                <select id="cantPersonas">
+                    <option value="1">1 persona</option>
+                    <option value="2">2 personas</option>
+                    <option value="3">3 personas</option>
+                    <option value="4">4 personas</option>
+                    <option value="5">5 personas</option>
+                    <option value="6">6 personas</option>
+                </select>
+                <button id="enviar" onclick="enviarReserva()">Enviar Reserva</button>
+                <p id="mensaje"></p>
+        </div>
+
+    </div>
     <h1>Gracias por utilzar nuestro servicios.</h1>
     <img src="https://i.postimg.cc/VkqFjF4D/darth.jpg" alt="darth vader">
 <script src="./assets/js/reservas.js"></script>

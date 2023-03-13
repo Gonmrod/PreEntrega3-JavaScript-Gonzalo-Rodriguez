@@ -1,29 +1,68 @@
-*{
-  margin: 0;
+* {
+  margin:0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  background-color: grey;
+
+body {
+  font-family: Arial, sans-serif;
   background-image: url(https://i.postimg.cc/qqDsvbJv/fondo.jpg);
-  background-size: cover;
-  color: aliceblue;
-  font-size: larger;
-  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  background-size:cover;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.sistemaContenedor{
+  justify-content: center;
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
-  text-align: center;
+}
+.contenedor{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+input[type="date"], select {
+  padding: 5px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
   justify-content: center;
   align-items: center;
 }
-img{
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
   display: flex;
-  flex-wrap: wrap;
-  position: absolute;
-  margin-top: 350px;
-  border-color: aliceblue;
-  border-style: double;
+  align-items: center;
+  justify-content: center;
 }
-h1{
-  margin: 300px;
+
+button:disabled {
+  background-color: #ddd;
+  color: #666;
+  cursor: default;
+}
+
+#mensaje {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
 }
