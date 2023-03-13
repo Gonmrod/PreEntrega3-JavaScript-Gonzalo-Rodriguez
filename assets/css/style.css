@@ -1,0 +1,29 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: grey;
+  background-image: url(https://i.postimg.cc/qqDsvbJv/fondo.jpg);
+  background-size: cover;
+  color: aliceblue;
+  font-size: larger;
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+img{
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  margin-top: 350px;
+  border-color: aliceblue;
+  border-style: double;
+}
+h1{
+  margin: 300px;
+}
