@@ -28,6 +28,11 @@ reservaForm.addEventListener('submit', function(event) {
   const fechaEntrada = document.getElementById('fechaEntrada').value;
   const fechaSalida = document.getElementById('fechaSalida').value;
 
+if (!nombre || !apellido || !dni || !cantidadPersonas || !fechaEntrada || !fechaSalida) {
+    const mensajeError = document.getElementById('mensajeError');
+    mensajeError.innerHTML = 'Por favor, complete todos los campos.';
+    return;
+  }
   // Crea un objeto de reserva con los valores de los campos
   const reserva = {
     nombre: nombre,
@@ -44,9 +49,9 @@ reservaForm.addEventListener('submit', function(event) {
 
   // Muestra las reservas actualizadas en la página
   mostrarReservas(reservas);
-
   // Limpia los valores de los campos de reserva
   reservaForm.reset();
+  document.getElementById('mensajeError').innerHTML = "";
 });
 
 // Agrega un evento al botón de búsqueda para manejar la búsqueda de reserva por DNI
