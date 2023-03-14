@@ -1,11 +1,11 @@
 body {
-  background-color: #f8f8f8;
+  background-color: #f3533a;
   font-family: Arial, sans-serif;
   margin: 0;
 }
 
 h1 {
-  color: #333;
+  color: #5acfc9;
   text-align: center;
   margin-top: 20px;
 }
@@ -15,7 +15,7 @@ h2 {
   justify-content: center;
   text-align: center;
   align-items: center;
-  color: #333;
+  color: #5acfc9;
   margin-top: 20px;
 }
 .cambio{
@@ -27,7 +27,7 @@ h2 {
 }
 
 form {
-  background-color: #fff;
+  background-color: #fa9f42;
   border-radius: 10px;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -77,8 +77,11 @@ button[type="submit"]:hover {
 }
 
 #reservasList li {
-  background-color: #fff;
+  background-color: #8ad879;
   border-radius: 5px;
+  font-family: 'Courier New', Courier, monospace;
+  color: #074c9b;
+  font-weight: bold;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 10px;
   padding: 20px;
