@@ -4,33 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Sistema de Reservas</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Reservas</title>
 </head>
 <body>
-    <h1>Sistema de Reservas</h1>
-    <div class="sistemaContenedor">
-        <div class="contenedor">
-            <p>Selecciona la fecha de entrada:</p>
-                <input type="date" id="fechaEntrada">
-                <p>Selecciona la fecha de salida:</p>
-                <input type="date" id="fechaSalida">
-                <p>Selecciona la cantidad de personas:</p>
-                <select id="cantPersonas">
-                    <option value="1">1 persona</option>
-                    <option value="2">2 personas</option>
-                    <option value="3">3 personas</option>
-                    <option value="4">4 personas</option>
-                    <option value="5">5 personas</option>
-                    <option value="6">6 personas</option>
-                </select>
-                <button id="enviar" onclick="enviarReserva()">Enviar Reserva</button>
-                <p id="mensaje"></p>
-        </div>
+  <h1>Sistema de Reservas</h1>
 
-    </div>
-    <h1>Gracias por utilzar nuestro servicios.</h1>
-    <img src="https://i.postimg.cc/VkqFjF4D/darth.jpg" alt="darth vader">
-<script src="./assets/js/reservas.js"></script>
+  <form id="reservaForm">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre"><br>
+
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" name="apellido"><br>
+
+    <label for="dni">DNI:</label>
+    <input type="text" id="dni" name="dni"><br>
+
+    <label for="cantidadPersonas">Cantidad de personas:</label>
+    <input type="number" id="cantidadPersonas" name="cantidadPersonas"><br>
+
+    <label for="fechaEntrada">Fecha de entrada:</label>
+    <input type="date" id="fechaEntrada" name="fechaEntrada"><br>
+
+    <label for="fechaSalida">Fecha de salida:</label>
+    <input type="date" id="fechaSalida" name="fechaSalida"><br>
+
+    <button type="submit">Reservar</button>
+  </form>
+
+  <h2>Reservas:</h2>
+  <div class="cambio">
+    <label for="dniBusqueda">Buscar por DNI:</label>
+    <input type="text" id="dniBusqueda">
+    <button type="button" id="buscarBtn">Buscar</button>
+    <button type="button" id="eliminarBtn" onclick="eliminarReserva()">Eliminar</button>
+    <div id="mensajeError"></div>
+  </div>
+  <ul id="reservasList"></ul>
+
+  <script src="/assets/js/reservas.js"></script>
 </body>
 </html>
