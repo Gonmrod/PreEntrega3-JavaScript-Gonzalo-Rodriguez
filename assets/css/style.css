@@ -126,7 +126,8 @@ button[type="submit"]:hover {
   background-color: #555;
 }
 #mensajeError {
-  color: red;
+  color: white;
+  margin-left: 5px;
   font-size: 14px;
   margin-top: 10px;
 }
@@ -179,6 +180,9 @@ button[type="submit"]:hover {
 
 .eliminarReserva:hover {
   background-color: #cc0000;
+}
+#reservasList{
+  color: white;
 }
 /* Estilos para pantallas grandes */
 @media only screen and (min-width: 768px) {
